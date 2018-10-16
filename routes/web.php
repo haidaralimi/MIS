@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('login');
 });
 //route for dash
 Route::get('dash',function(){
@@ -62,4 +62,19 @@ Route::get('rejected_department',function(){
 //route for create user
 Route::get('create_user',function (){
    return view('create_user');
+});
+//route for login page
+Route::get('login',function (){
+   return view('login');
+});
+
+// route for history
+
+Route::get('history',function (){
+   return view('history');
+});
+
+//route for test
+Route::get('test',function (){
+  return view('test');
 });

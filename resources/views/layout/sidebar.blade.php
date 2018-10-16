@@ -14,9 +14,9 @@
                              </span> <span class="text-muted text-xs block">انجینیر نرم افزار <b
                                             class="caret"></b></span> </span> </a>
                         <ul class="dropdown-menu animated fadeInRight m-t-xs">
-                            <li><a href="profile.html">پروفایل</a></li>
-                            <li><a href="contacts.html">محتول</a></li>
-                            <li><a href="login.html">خروج</a></li>
+                            <li><a href="#">پروفایل</a></li>
+                            <li><a href="#">محتول</a></li>
+                            <li><a href="login">خروج</a></li>
                         </ul>
                     </div>
                     <div class="logo-element">
@@ -44,7 +44,7 @@
                         <li><a href="create_faculty">ایجاد پوهنحی جدید</a></li>
                         <li><a href="faculty_list">لیست پوهنحی ها</a></li>
                         <li><a href="add_faculty_responsiable">تعین مسول جدید</a></li>
-                        <li><a href="#">لیست مسولین </a></li>
+                        <li><a href="faculty_responsiable_list">لیست مسولین </a></li>
 
                     </ul>
                 </li>
@@ -58,6 +58,10 @@
                         <li><a href="rejected_department">دیپارتمنت های در حال لغو</a></li>
 
                     </ul>
+                </li>
+                <li>
+                    <a href="history"> <span class="nav-label">&nbsp;&nbsp;تاریخچه  </span><i class="fa fa-home"></i><span
+                                class="fa arrow"></span></a>
                 </li>
                 <li>
                     <a href="#"> <span class="nav-label">&nbsp;&nbsp;تنظیمات  </span><i class="fa fa-cog"></i><span

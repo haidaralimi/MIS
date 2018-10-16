@@ -31,7 +31,7 @@
                 {{-- current exchange --}}
 
                 <li>
-                    <a href="login">
+                    <a href="/login">
                         <i class="fa fa-sign-out text-warning"></i>خروج
                     </a>
                 </li>
