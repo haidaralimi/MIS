@@ -1,10 +1,12 @@
 @extends('master')
+
 @section('content')
+
     <div class="wrapper wrapper-content animated fadeInLeft">
         <div class="col-lg-12">
             <div class="ibox float-e-margins">
                 <div class="ibox-title">
-                    <h5>لیست دیپارتمنت های معقول سازی شده</h5>
+                    <h5>لیست مسولین پوهنحی ها </h5>
                     <div class="ibox-tools">
                         <a class="collapse-link">
                             <i class="fa fa-chevron-up"></i>
@@ -26,9 +28,9 @@
                 <div class="ibox-content">
                     <div class="row">
                         <div class="col-md-2">
-                            <a href="create_department">
+                            <a href="create_reports">
                                 <button class="btn btn-primary">
-                                    <li class="fa fa-plus"></li>&nbsp;<b> تدویر دیپارتمنت جدید</b>
+                                    <li class="fa fa-plus"></li>&nbsp;<b> ایجاد گزارش جدید</b>
                                 </button>
                             </a>
                         </div>
@@ -40,19 +42,18 @@
                     <button type="button" disabled class="btn btn-white"><i class="fa fa-search"></i>
                     </button> </span>
                                 <input type="text" id="search" onkeyup="filter_search()" name="search_patient"
-                                       placeholder="نام دیپارتمنت را جستجو کنید"
+                                       placeholder="گزارش را جستجو کنید"
                                        class=" form-control"></div>
                         </div>
                     </div>
+                    <br>
 
-                    <table class="table table-hover">
+                    <table class="table table-hover ">
                         <thead>
-                        <tr>
+                        <tr class="text-center">
                             <th>ای دی</th>
-                            <th>نام دیپارتمنت</th>
-                            <th>نام پوهنحی</th>
-                            <th>نام پوهنتون</th>
-                            <th>نمبر اساس</th>
+                            <th> نام پوهنتون</th>
+                            <th>نمبر صادره مکتوب</th>
                             <th>تاریخ ایجاد</th>
                             <th>ویرایش</th>
                             <th>حذف</th>
@@ -62,142 +63,75 @@
                         <tbody>
                         <tr>
                             <td>۱</td>
-                            <td>دری</td>
-                            <td>ادبیات</td>
                             <td>کابل</td>
-                            <td>۴۹۴۹</td>
-                            <td>۱۳۹۷/۲/۴</td>
-                            <td>
-                                <button class="btn btn-success btn-xs" data-toggle="modal" data-target="#edit">ویرایش&nbsp;<i
-                                            class="fa fa-edit"></i></button>
-                            </td>
-                            <td>
-                                <button class="btn btn-danger btn-xs">حذف&nbsp;<i class="fa fa-edit"></i></button>
-                            </td>
-                            <td>
-                                <button class="btn btn-success btn-xs" data-toggle="modal" data-target="#details">جزییات&nbsp;<i
-                                            class="fa fa-edit"></i></button>
-                            </td>
+                            <td>۱۳۲۲</td>
+                            <td>۱۳۹۷/۳/۲</td>
+                            <td><button class="btn btn-success btn-xs" data-toggle="modal" data-target="#edit">ویرایش&nbsp;<i class="fa fa-edit"></i></button></td>
+                            <td><button class="btn btn-danger btn-xs">حذف&nbsp;<i class="fa fa-edit"></i></button></td>
+                            <td><button class="btn btn-success btn-xs" data-toggle="modal" data-target="#details">جزییات&nbsp;<i class="fa fa-edit"></i></button></td>
+
 
                         </tr>
                         <tr>
                             <td>۱</td>
-                            <td>دری</td>
-                            <td>ادبیات</td>
                             <td>کابل</td>
-                            <td>۴۹۴۹</td>
-                            <td>۱۳۹۷/۲/۴</td>
-                            <td>
-                                <button class="btn btn-success btn-xs" data-toggle="modal" data-target="#edit">ویرایش&nbsp;<i
-                                            class="fa fa-edit"></i></button>
-                            </td>
-                            <td>
-                                <button class="btn btn-danger btn-xs">حذف&nbsp;<i class="fa fa-edit"></i></button>
-                            </td>
-                            <td>
-                                <button class="btn btn-success btn-xs" data-toggle="modal" data-target="#details">جزییات&nbsp;<i
-                                            class="fa fa-edit"></i></button>
-                            </td>
+                            <td>۱۳۲۲</td>
+                            <td>۱۳۹۷/۳/۲</td>
+                            <td><button class="btn btn-success btn-xs" data-toggle="modal" data-target="#edit">ویرایش&nbsp;<i class="fa fa-edit"></i></button></td>
+                            <td><button class="btn btn-danger btn-xs">حذف&nbsp;<i class="fa fa-edit"></i></button></td>
+                            <td><button class="btn btn-success btn-xs" data-toggle="modal" data-target="#details">جزییات&nbsp;<i class="fa fa-edit"></i></button></td>
+
+
 
                         </tr>
                         <tr>
                             <td>۱</td>
-                            <td>دری</td>
-                            <td>ادبیات</td>
                             <td>کابل</td>
-                            <td>۴۹۴۹</td>
-                            <td>۱۳۹۷/۲/۴</td>
-                            <td>
-                                <button class="btn btn-success btn-xs" data-toggle="modal" data-target="#edit">ویرایش&nbsp;<i
-                                            class="fa fa-edit"></i></button>
-                            </td>
-                            <td>
-                                <button class="btn btn-danger btn-xs">حذف&nbsp;<i class="fa fa-edit"></i></button>
-                            </td>
-                            <td>
-                                <button class="btn btn-success btn-xs" data-toggle="modal" data-target="#details">جزییات&nbsp;<i
-                                            class="fa fa-edit"></i></button>
-                            </td>
+                            <td>۱۳۲۲</td>
+                            <td>۱۳۹۷/۳/۲</td>
+                            <td><button class="btn btn-success btn-xs" data-toggle="modal" data-target="#edit">ویرایش&nbsp;<i class="fa fa-edit"></i></button></td>
+                            <td><button class="btn btn-danger btn-xs">حذف&nbsp;<i class="fa fa-edit"></i></button></td>
+                            <td><button class="btn btn-success btn-xs" data-toggle="modal" data-target="#details">جزییات&nbsp;<i class="fa fa-edit"></i></button></td>
 
                         </tr>
                         <tr>
                             <td>۱</td>
-                            <td>دری</td>
-                            <td>ادبیات</td>
                             <td>کابل</td>
-                            <td>۴۹۴۹</td>
-                            <td>۱۳۹۷/۲/۴</td>
-                            <td>
-                                <button class="btn btn-success btn-xs" data-toggle="modal" data-target="#edit">ویرایش&nbsp;<i
-                                            class="fa fa-edit"></i></button>
-                            </td>
-                            <td>
-                                <button class="btn btn-danger btn-xs">حذف&nbsp;<i class="fa fa-edit"></i></button>
-                            </td>
-                            <td>
-                                <button class="btn btn-success btn-xs" data-toggle="modal" data-target="#details">جزییات&nbsp;<i
-                                            class="fa fa-edit"></i></button>
-                            </td>
+                            <td>۱۳۲۲</td>
+                            <td>۱۳۹۷/۳/۲</td>
+                            <td><button class="btn btn-success btn-xs" data-toggle="modal" data-target="#edit">ویرایش&nbsp;<i class="fa fa-edit"></i></button></td>
+                            <td><button class="btn btn-danger btn-xs">حذف&nbsp;<i class="fa fa-edit"></i></button></td>
+                            <td><button class="btn btn-success btn-xs" data-toggle="modal" data-target="#details">جزییات&nbsp;<i class="fa fa-edit"></i></button></td>
 
                         </tr>
                         <tr>
                             <td>۱</td>
-                            <td>دری</td>
-                            <td>ادبیات</td>
                             <td>کابل</td>
-                            <td>۴۹۴۹</td>
-                            <td>۱۳۹۷/۲/۴</td>
-                            <td>
-                                <button class="btn btn-success btn-xs" data-toggle="modal" data-target="#edit">ویرایش&nbsp;<i
-                                            class="fa fa-edit"></i></button>
-                            </td>
-                            <td>
-                                <button class="btn btn-danger btn-xs">حذف&nbsp;<i class="fa fa-edit"></i></button>
-                            </td>
-                            <td>
-                                <button class="btn btn-success btn-xs" data-toggle="modal" data-target="#details">جزییات&nbsp;<i
-                                            class="fa fa-edit"></i></button>
-                            </td>
+                            <td>۱۳۲۲</td>
+                            <td>۱۳۹۷/۳/۲</td>
+                            <td><button class="btn btn-success btn-xs" data-toggle="modal" data-target="#edit">ویرایش&nbsp;<i class="fa fa-edit"></i></button></td>
+                            <td><button class="btn btn-danger btn-xs">حذف&nbsp;<i class="fa fa-edit"></i></button></td>
+                            <td><button class="btn btn-success btn-xs" data-toggle="modal" data-target="#details">جزییات&nbsp;<i class="fa fa-edit"></i></button></td>
 
                         </tr>
                         <tr>
                             <td>۱</td>
-                            <td>دری</td>
-                            <td>ادبیات</td>
                             <td>کابل</td>
-                            <td>۴۹۴۹</td>
-                            <td>۱۳۹۷/۲/۴</td>
-                            <td>
-                                <button class="btn btn-success btn-xs" data-toggle="modal" data-target="#edit">ویرایش&nbsp;<i
-                                            class="fa fa-edit"></i></button>
-                            </td>
-                            <td>
-                                <button class="btn btn-danger btn-xs">حذف&nbsp;<i class="fa fa-edit"></i></button>
-                            </td>
-                            <td>
-                                <button class="btn btn-success btn-xs" data-toggle="modal" data-target="#details">جزییات&nbsp;<i
-                                            class="fa fa-edit"></i></button>
-                            </td>
+                            <td>۱۳۲۲</td>
+                            <td>۱۳۹۷/۳/۲</td>
+                            <td><button class="btn btn-success btn-xs" data-toggle="modal" data-target="#edit">ویرایش&nbsp;<i class="fa fa-edit"></i></button></td>
+                            <td><button class="btn btn-danger btn-xs">حذف&nbsp;<i class="fa fa-edit"></i></button></td>
+                            <td><button class="btn btn-success btn-xs" data-toggle="modal" data-target="#details">جزییات&nbsp;<i class="fa fa-edit"></i></button></td>
 
                         </tr>
                         <tr>
                             <td>۱</td>
-                            <td>دری</td>
-                            <td>ادبیات</td>
                             <td>کابل</td>
-                            <td>۴۹۴۹</td>
-                            <td>۱۳۹۷/۲/۴</td>
-                            <td>
-                                <button class="btn btn-success btn-xs" data-toggle="modal" data-target="#edit">ویرایش&nbsp;<i
-                                            class="fa fa-edit"></i></button>
-                            </td>
-                            <td>
-                                <button class="btn btn-danger btn-xs">حذف&nbsp;<i class="fa fa-edit"></i></button>
-                            </td>
-                            <td>
-                                <button class="btn btn-success btn-xs" data-toggle="modal" data-target="#details">جزییات&nbsp;<i
-                                            class="fa fa-edit"></i></button>
-                            </td>
+                            <td>۱۳۲۲</td>
+                            <td>۱۳۹۷/۳/۲</td>
+                            <td><button class="btn btn-success btn-xs" data-toggle="modal" data-target="#edit">ویرایش&nbsp;<i class="fa fa-edit"></i></button></td>
+                            <td><button class="btn btn-danger btn-xs">حذف&nbsp;<i class="fa fa-edit"></i></button></td>
+                            <td><button class="btn btn-success btn-xs" data-toggle="modal" data-target="#details">جزییات&nbsp;<i class="fa fa-edit"></i></button></td>
 
                         </tr>
 
@@ -207,6 +141,7 @@
             </div>
         </div>
     </div>
+
     {{--start of edit modal window--}}
     <div class="modal inmodal" id="edit" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
@@ -223,8 +158,7 @@
                             <form class="form-horizontal">
                                 <div class="form-group"><label class="col-lg-2 control-label">نام</label>
 
-                                    <div class="col-lg-10"><input type="text" placeholder="نام را وارد کنید"
-                                                                  class="form-control">
+                                    <div class="col-lg-10"><input type="text" placeholder="نام را وارد کنید" class="form-control">
                                     </div>
                                 </div>
                                 <div class="form-group"><label class="col-lg-2 control-label">تخلص</label>
@@ -234,8 +168,7 @@
                                 </div>
                                 <div class="form-group"><label class="col-lg-2 control-label">نام مکمل</label>
 
-                                    <div class="col-lg-10"><input type="text" placeholder="نام مکمل"
-                                                                  class="form-control">
+                                    <div class="col-lg-10"><input type="text" placeholder="نام مکمل" class="form-control">
                                     </div>
                                 </div>
                                 <div class="form-group"><label class="col-lg-2 control-label">جنسیت</label>
@@ -271,13 +204,14 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-white" style="float: right" data-dismiss="modal">بستن</button>
-                    <button type="button" class="btn btn-primary" style="float: right">ذخیره کردن</button>
+                    <button type="button" class="btn btn-white" data-dismiss="modal">بستن</button>
+                    <button type="button" class="btn btn-primary">ذخیره کردن</button>
                 </div>
             </div>
         </div>
     </div>
     {{--end of edit modal window--}}
+
     {{--start of details  modal window--}}
     <div class="modal inmodal" id="details" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
@@ -312,14 +246,13 @@
                     </tr>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-white" style="float: right" data-dismiss="modal">بستن</button>
-                    <button type="button" class="btn btn-primary" style="float: right">ذخیره کردن</button>
+                    <button type="button" class="btn btn-white" data-dismiss="modal">بستن</button>
+                    <button type="button" class="btn btn-primary">ذخیره کردن</button>
                 </div>
             </div>
         </div>
     </div>
     {{--end of details modal window--}}
-
 
 
 @endsection

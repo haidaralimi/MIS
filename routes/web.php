@@ -78,3 +78,29 @@ Route::get('history',function (){
 Route::get('test',function (){
   return view('test');
 });
+//route for user list
+Route::get('user_list',function (){
+   return view('user_list');
+});
+
+//route for change password
+Route::get('change_password',function (){
+   return view('change_password');
+});
+//route for create university responsiable
+Route::get('create_university_responsiable',function (){
+   return view('create_university_responsiable');
+});
+//route for university responsiable list
+Route::get('university_responsiable_list',function (){
+   return view('university_responsiable_list');
+});
+
+//route for university reports
+Route::get('university_reports',function (){
+   return view('university_reports');
+});
+//route for create reports
+Route::get('create_reports',function (){
+   return view('create_reports');
+});

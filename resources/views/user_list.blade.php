@@ -4,7 +4,7 @@
         <div class="col-lg-12">
             <div class="ibox float-e-margins">
                 <div class="ibox-title">
-                    <h5>لیست پوهنحی ها</h5>
+                    <h5>لیست استفاده کننده ها</h5>
                     <div class="ibox-tools">
                         <a class="collapse-link">
                             <i class="fa fa-chevron-up"></i>
@@ -24,36 +24,27 @@
                     </div>
                 </div>
                 <div class="ibox-content">
+
                     <div class="row">
                         <div class="col-md-2">
-                            <a href="create_faculty">
+                            <a href="create_user">
                                 <button class="btn btn-primary">
-                                    <li class="fa fa-plus"></li>&nbsp; <b>تدویر پوهنحی</b>
+                                    <li class="fa fa-plus"></li>&nbsp;<b>ایجاد استفاده کننده جدید</b>
                                 </button>
                             </a>
                         </div>
                     </div>
-                    {{--<div class="hr-line-dashed"></div>--}}
                     <br>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="input-group"><span class="input-group-btn">
-                    <button type="button" disabled class="btn btn-white"><i class="fa fa-search"></i>
-                    </button> </span>
-                                <input type="text" id="search" onkeyup="filter_search()" name="search_patient"
-                                       placeholder="نام پوهنحی را جستجو کنید"
-                                       class=" form-control"></div>
-                        </div>
-                    </div>
+
                     <table class="table table-hover">
                         <thead>
                         <tr>
                             <th>ای دی</th>
-                            <th>نام پوهنحی</th>
-                            <th>نام مسول</th>
-                            <th>نام پوهنتون</th>
-                            <th>نمبر اساس</th>
-                            <th>تاریخ ایجاد</th>
+                            <th>نام</th>
+                            <th>تخلص</th>
+                            <th>نام مکمل</th>
+                            <th>جنسیت</th>
+                            <th>مقام</th>
                             <th>ویرایش</th>
                             <th>حذف</th>
                             <th>جزییات</th>
@@ -62,63 +53,18 @@
                         <tbody>
                         <tr>
                             <td>۱</td>
-                            <td>اقتصاد</td>
-                            <td>بارکزی</td>
-                            <td>کابل</td>
-                            <td>۴۳۲۳</td>
-                            <td>۱۳۹۷/۲/۴</td>
-                            <td>
-                                <button class="btn btn-primary btn-xs" data-toggle="modal" data-target="#edit"><i
-                                            class="fa fa-edit"></i>&nbsp;ویرایش
-                                </button>
-                            </td>
-                            <td>
-                                <button class="btn btn-danger btn-xs demo3"><i class="fa fa-remove"></i>&nbsp;حذف
-                                </button>
-                            </td>
-                            <td>
-                                <button class="btn btn-primary btn-xs" data-toggle="modal" data-target="#details"><i
-                                            class="fa fa-info"></i>&nbsp;جزییات
-                                </button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>۲</td>
-                            <td>زراعت</td>
-                            <td>بارکزی</td>
-                            <td>کابل</td>
-                            <td>۴۳۲۳</td>
-                            <td>۱۳۹۷/۲/۴</td>
-                            <td>
-                                <button class="btn btn-primary btn-xs" data-toggle="modal" data-target="#edit"><i
-                                            class="fa fa-edit"></i>&nbsp;ویرایش
-                                </button>
-                            </td>
-                            <td>
-                                <button class="btn btn-danger btn-xs demo3"><i class="fa fa-remove"></i>&nbsp;حذف
-                                </button>
-                            </td>
-                            <td>
-                                <button class="btn btn-primary btn-xs" data-toggle="modal" data-target="#details"><i
-                                            class="fa fa-info"></i>&nbsp;جزییات
-                                </button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>۳</td>
-                            <td>ژورنالیزم</td>
+                            <td>احمد</td>
                             <td>احمدی</td>
-                            <td>بلخ</td>
-                            <td>۴۳۲۳</td>
-                            <td>۱۳۹۷/۲/۴</td>
+                            <td>احمد احمدی</td>
+                            <td>مرد</td>
+                            <td>آمر</td>
                             <td>
                                 <button class="btn btn-primary btn-xs" data-toggle="modal" data-target="#edit"><i
                                             class="fa fa-edit"></i>&nbsp;ویرایش
                                 </button>
                             </td>
                             <td>
-                                <button class="btn btn-danger btn-xs demo3"><i class="fa fa-remove"></i>&nbsp;حذف
-                                </button>
+                                <button class="btn btn-danger btn-xs"><i class="fa fa-remove"></i>&nbsp;حذف</button>
                             </td>
                             <td>
                                 <button class="btn btn-primary btn-xs" data-toggle="modal" data-target="#details"><i
@@ -127,20 +73,19 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>۴</td>
-                            <td>ادبیات</td>
-                            <td>کریمی</td>
-                            <td>قندهار</td>
-                            <td>۴۳۲۳</td>
-                            <td>۱۳۹۷/۲/۴</td>
+                            <td>۱</td>
+                            <td>احمد</td>
+                            <td>احمدی</td>
+                            <td>احمد احمدی</td>
+                            <td>مرد</td>
+                            <td>آمر</td>
                             <td>
                                 <button class="btn btn-primary btn-xs" data-toggle="modal" data-target="#edit"><i
                                             class="fa fa-edit"></i>&nbsp;ویرایش
                                 </button>
                             </td>
                             <td>
-                                <button class="btn btn-danger btn-xs demo3"><i class="fa fa-remove"></i>&nbsp;حذف
-                                </button>
+                                <button class="btn btn-danger btn-xs"><i class="fa fa-remove"></i>&nbsp;حذف</button>
                             </td>
                             <td>
                                 <button class="btn btn-primary btn-xs" data-toggle="modal" data-target="#details"><i
@@ -149,20 +94,19 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>۵</td>
-                            <td>علوم اجتماعی</td>
-                            <td>هاشمی</td>
-                            <td>البیرونی</td>
-                            <td>۴۳۲۳</td>
-                            <td>۱۳۹۷/۲/۴</td>
+                            <td>۱</td>
+                            <td>احمد</td>
+                            <td>احمدی</td>
+                            <td>احمد احمدی</td>
+                            <td>مرد</td>
+                            <td>آمر</td>
                             <td>
                                 <button class="btn btn-primary btn-xs" data-toggle="modal" data-target="#edit"><i
                                             class="fa fa-edit"></i>&nbsp;ویرایش
                                 </button>
                             </td>
                             <td>
-                                <button class="btn btn-danger btn-xs demo3"><i class="fa fa-remove"></i>&nbsp;حذف
-                                </button>
+                                <button class="btn btn-danger btn-xs"><i class="fa fa-remove"></i>&nbsp;حذف</button>
                             </td>
                             <td>
                                 <button class="btn btn-primary btn-xs" data-toggle="modal" data-target="#details"><i
@@ -171,20 +115,19 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>۶</td>
-                            <td>زمین شناسی</td>
-                            <td>محمد</td>
-                            <td>قندهار</td>
-                            <td>۴۳۲۳</td>
-                            <td>۱۳۹۷/۲/۴</td>
+                            <td>۱</td>
+                            <td>احمد</td>
+                            <td>احمدی</td>
+                            <td>احمد احمدی</td>
+                            <td>مرد</td>
+                            <td>آمر</td>
                             <td>
                                 <button class="btn btn-primary btn-xs" data-toggle="modal" data-target="#edit"><i
                                             class="fa fa-edit"></i>&nbsp;ویرایش
                                 </button>
                             </td>
                             <td>
-                                <button class="btn btn-danger btn-xs demo3"><i class="fa fa-remove"></i>&nbsp;حذف
-                                </button>
+                                <button class="btn btn-danger btn-xs"><i class="fa fa-remove"></i>&nbsp;حذف</button>
                             </td>
                             <td>
                                 <button class="btn btn-primary btn-xs" data-toggle="modal" data-target="#details"><i
@@ -193,20 +136,82 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>۷</td>
-                            <td>شرعیات</td>
-                            <td>خلیلی</td>
-                            <td>هرات</td>
-                            <td>۴۳۲۳</td>
-                            <td>۱۳۹۷/۲/۴</td>
+                            <td>۱</td>
+                            <td>احمد</td>
+                            <td>احمدی</td>
+                            <td>احمد احمدی</td>
+                            <td>مرد</td>
+                            <td>آمر</td>
                             <td>
                                 <button class="btn btn-primary btn-xs" data-toggle="modal" data-target="#edit"><i
                                             class="fa fa-edit"></i>&nbsp;ویرایش
                                 </button>
                             </td>
                             <td>
-                                <button class="btn btn-danger btn-xs demo3"><i class="fa fa-remove"></i>&nbsp;حذف
+                                <button class="btn btn-danger btn-xs"><i class="fa fa-remove"></i>&nbsp;حذف</button>
+                            </td>
+                            <td>
+                                <button class="btn btn-primary btn-xs" data-toggle="modal" data-target="#details"><i
+                                            class="fa fa-info"></i>&nbsp;جزییات
                                 </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>۱</td>
+                            <td>احمد</td>
+                            <td>احمدی</td>
+                            <td>احمد احمدی</td>
+                            <td>مرد</td>
+                            <td>آمر</td>
+                            <td>
+                                <button class="btn btn-primary btn-xs" data-toggle="modal" data-target="#edit"><i
+                                            class="fa fa-edit"></i>&nbsp;ویرایش
+                                </button>
+                            </td>
+                            <td>
+                                <button class="btn btn-danger btn-xs"><i class="fa fa-remove"></i>&nbsp;حذف</button>
+                            </td>
+                            <td>
+                                <button class="btn btn-primary btn-xs" data-toggle="modal" data-target="#details"><i
+                                            class="fa fa-info"></i>&nbsp;جزییات
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>۱</td>
+                            <td>احمد</td>
+                            <td>احمدی</td>
+                            <td>احمد احمدی</td>
+                            <td>مرد</td>
+                            <td>آمر</td>
+                            <td>
+                                <button class="btn btn-primary btn-xs" data-toggle="modal" data-target="#edit"><i
+                                            class="fa fa-edit"></i>&nbsp;ویرایش
+                                </button>
+                            </td>
+                            <td>
+                                <button class="btn btn-danger btn-xs"><i class="fa fa-remove"></i>&nbsp;حذف</button>
+                            </td>
+                            <td>
+                                <button class="btn btn-primary btn-xs" data-toggle="modal" data-target="#details"><i
+                                            class="fa fa-info"></i>&nbsp;جزییات
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>۱</td>
+                            <td>احمد</td>
+                            <td>احمدی</td>
+                            <td>احمد احمدی</td>
+                            <td>مرد</td>
+                            <td>آمر</td>
+                            <td>
+                                <button class="btn btn-primary btn-xs" data-toggle="modal" data-target="#edit"><i
+                                            class="fa fa-edit"></i>&nbsp;ویرایش
+                                </button>
+                            </td>
+                            <td>
+                                <button class="btn btn-danger btn-xs"><i class="fa fa-remove"></i>&nbsp;حذف</button>
                             </td>
                             <td>
                                 <button class="btn btn-primary btn-xs" data-toggle="modal" data-target="#details"><i
@@ -283,13 +288,15 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-white" style="float: right" data-dismiss="modal">بستن</button>
-                    <button type="button" class="btn btn-primary" style="float: right">ذخیره کردن</button>
+                    <button type="button" class="btn btn-primary " style="float: right">ذخیره کردن</button>
+                    <button type="button" class="btn btn-white " style="float: right" data-dismiss="modal">بستن</button>
+
                 </div>
             </div>
         </div>
     </div>
     {{--end of edit modal window--}}
+
     {{--start of details  modal window--}}
     <div class="modal inmodal" id="details" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
@@ -324,14 +331,86 @@
                     </tr>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-white" style="float: right" data-dismiss="modal">بستن</button>
-                    <button type="button" class="btn btn-primary" style="float: right">ذخیره کردن</button>
+                    <button type="button" class="btn btn-white" data-dismiss="modal">بستن</button>
+                    <button type="button" class="btn btn-primary">ذخیره کردن</button>
                 </div>
             </div>
         </div>
     </div>
     {{--end of details modal window--}}
 
+@endsection
+@section('script')
+    <!-- script -->
+
+    <script src="dashboard/js/plugins/sweetalert/sweetalert.min.js"></script>
+    <script> $(document).ready(function () {
+
+            $('.demo1').click(function () {
+                swal({
+                    title: "Welcome in Alerts",
+                    text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+                });
+            });
+
+            $('.demo2').click(function () {
+                swal({
+                    title: "Successfully Send!",
+                    text: "X-Ray Document Successfully send to doctor!",
+                    type: "success"
+                });
+            });
+
+            $('.demo3').click(function () {
+                swal({
+                    title: "Are you sure?",
+                    text: "You will not be able to recover this imaginary file!",
+                    type: "warning",
+                    showCancelButton: true,
+                    confirmButtonColor: "#DD6B55",
+                    confirmButtonText: "Yes, delete it!",
+                    closeOnConfirm: false
+                }, function () {
+                    swal("Deleted!", "Your imaginary file has been deleted.", "success");
+                });
+            });
+
+            $('.demo4').click(function () {
+                swal({
+                        title: "Are you sure?",
+                        text: "Your will not be able to recover this imaginary file!",
+                        type: "warning",
+                        showCancelButton: true,
+                        confirmButtonColor: "#DD6B55",
+                        confirmButtonText: "Yes, delete it!",
+                        cancelButtonText: "No, cancel plx!",
+                        closeOnConfirm: false,
+                        closeOnCancel: false
+                    },
+                    function (isConfirm) {
+                        if (isConfirm) {
+                            swal("Deleted!", "Your imaginary file has been deleted.", "success");
+                        } else {
+                            swal("Cancelled", "Your imaginary file is safe :)", "error");
+                        }
+                    });
+            });
+
+
+        });
+    </script>
+
+
+
+    <!-- Data Tables -->
+    <script src="dashboard/js/plugins/dataTables/jquery.dataTables.js"></script>
+    <script src="dashboard/js/plugins/dataTables/dataTables.bootstrap.js"></script>
+    <script src="dashboard/js/plugins/dataTables/dataTables.responsive.js"></script>
+    <script src="dashboard/js/plugins/dataTables/dataTables.tableTools.min.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="dashboard/js/inspinia.js"></script>
+    <script src="dashboard/js/plugins/pace/pace.min.js"></script>
 
 
 @endsection

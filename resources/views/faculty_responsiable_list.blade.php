@@ -2,295 +2,349 @@
 
 @section('content')
 
-<div class="wrapper wrapper-content animated fadeInLeft">
-<div class="col-lg-12">
-                    <div class="ibox float-e-margins">
-                        <div class="ibox-title">
-                            <h5>لیست مسولین پوهنحی ها </h5>
-                            <div class="ibox-tools">
-                                <a class="collapse-link">
-                                    <i class="fa fa-chevron-up"></i>
-                                </a>
-                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                                    <i class="fa fa-wrench"></i>
-                                </a>
-                                <ul class="dropdown-menu dropdown-user">
-                                    <li><a href="#">Config option 1</a>
-                                    </li>
-                                    <li><a href="#">Config option 2</a>
-                                    </li>
-                                </ul>
-                                <a class="close-link">
-                                    <i class="fa fa-times"></i>
-                                </a>
-                            </div>
+    <div class="wrapper wrapper-content animated fadeInLeft">
+        <div class="col-lg-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>لیست مسولین پوهنحی ها </h5>
+                    <div class="ibox-tools">
+                        <a class="collapse-link">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <i class="fa fa-wrench"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-user">
+                            <li><a href="#">Config option 1</a>
+                            </li>
+                            <li><a href="#">Config option 2</a>
+                            </li>
+                        </ul>
+                        <a class="close-link">
+                            <i class="fa fa-times"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="ibox-content">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <a href="add_faculty_responsiable">
+                                <button class="btn btn-primary">
+                                    <li class="fa fa-plus"></li>&nbsp;<b> تعین مسول جدید</b>
+                                </button>
+                            </a>
                         </div>
-                        <div class="ibox-content">
-                            <div class="row">
-                                <div class="col-md-2">
-                                    <a href="create_faculty">
-                                        <button class="btn btn-primary">
-                                            <li class="fa fa-plus"></li>&nbsp; ایجاد مسول جدید
-                                        </button>
-                                    </a>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="input-group"><span class="input-group-btn">
+                    <button type="button" disabled class="btn btn-white"><i class="fa fa-search"></i>
+                    </button> </span>
+                                <input type="text" id="search" onkeyup="filter_search()" name="search_patient"
+                                       placeholder="نام پوهنتون را جستجو کنید"
+                                       class=" form-control"></div>
+                        </div>
+                    </div>
+
+                    <table class="table table-hover ">
+                        <thead>
+                        <tr class="text-center">
+                            <th>ای دی</th>
+                            <th>نام</th>
+                            <th>تخلص</th>
+                            <th>رتبه علمی</th>
+                            <th>نام پوهنحی</th>
+                            <th>نام پوهنتون</th>
+                            <th>نمبر اساس</th>
+                            <th>تاریخ ایجاد</th>
+                            <th>ویرایش</th>
+                            <th>حذف</th>
+                            <th>جزییات</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>۱</td>
+                            <td>احمد</td>
+                            <td>کریمی</td>
+                            <td>پوهاند</td>
+                            <td>هنرهای زیبا</td>
+                            <td>کابل</td>
+                            <td>۱۴۳۲۳</td>
+                            <td>۱۳۹۷/۲۲/۳</td>
+                            <td>
+                                <button class="btn btn-success btn-xs" data-toggle="modal" data-target="#edit">ویرایش&nbsp;<i
+                                            class="fa fa-edit"></i></button>
+                            </td>
+                            <td>
+                                <button class="btn btn-danger btn-xs">حذف&nbsp;<i class="fa fa-edit"></i></button>
+                            </td>
+                            <td>
+                                <button class="btn btn-success btn-xs" data-toggle="modal" data-target="#details">جزییات&nbsp;<i
+                                            class="fa fa-edit"></i></button>
+                            </td>
+
+
+                        </tr>
+                        <tr>
+                            <td>۲</td>
+                            <td>کریم</td>
+                            <td>کریمی</td>
+                            <td>پوهاند</td>
+                            <td>هنرهای زیبا</td>
+                            <td>کابل</td>
+                            <td>۱۴۳۲۳</td>
+                            <td>۱۳۹۷/۲۲/۳</td>
+                            <td>
+                                <button class="btn btn-success btn-xs" data-toggle="modal" data-target="#edit">ویرایش&nbsp;<i
+                                            class="fa fa-edit"></i></button>
+                            </td>
+                            <td>
+                                <button class="btn btn-danger btn-xs">حذف&nbsp;<i class="fa fa-edit"></i></button>
+                            </td>
+                            <td>
+                                <button class="btn btn-success btn-xs" data-toggle="modal" data-target="#details">جزییات&nbsp;<i
+                                            class="fa fa-edit"></i></button>
+                            </td>
+
+
+                        </tr>
+                        <tr>
+                            <td>۳</td>
+                            <td>خالد</td>
+                            <td>احمدی</td>
+                            <td>پوهاند</td>
+                            <td>هنرهای زیبا</td>
+                            <td>کابل</td>
+                            <td>۱۴۳۲۳</td>
+                            <td>۱۳۹۷/۲۲/۳</td>
+                            <td>
+                                <button class="btn btn-success btn-xs" data-toggle="modal" data-target="#edit">ویرایش&nbsp;<i
+                                            class="fa fa-edit"></i></button>
+                            </td>
+                            <td>
+                                <button class="btn btn-danger btn-xs">حذف&nbsp;<i class="fa fa-edit"></i></button>
+                            </td>
+                            <td>
+                                <button class="btn btn-success btn-xs" data-toggle="modal" data-target="#details">جزییات&nbsp;<i
+                                            class="fa fa-edit"></i></button>
+                            </td>
+
+
+                        </tr>
+                        <tr>
+                            <td>۵</td>
+                            <td>احمد</td>
+                            <td>کریمی</td>
+                            <td>پوهاند</td>
+                            <td>هنرهای زیبا</td>
+                            <td>کابل</td>
+                            <td>۱۴۳۲۳</td>
+                            <td>۱۳۹۷/۲۲/۳</td>
+                            <td>
+                                <button class="btn btn-success btn-xs" data-toggle="modal" data-target="#edit">ویرایش&nbsp;<i
+                                            class="fa fa-edit"></i></button>
+                            </td>
+                            <td>
+                                <button class="btn btn-danger btn-xs">حذف&nbsp;<i class="fa fa-edit"></i></button>
+                            </td>
+                            <td>
+                                <button class="btn btn-success btn-xs" data-toggle="modal" data-target="#details">جزییات&nbsp;<i
+                                            class="fa fa-edit"></i></button>
+                            </td>
+
+
+                        </tr>
+                        <tr>
+                            <td>۶</td>
+                            <td>نوید</td>
+                            <td>کریمی</td>
+                            <td>پوهاند</td>
+                            <td>هنرهای زیبا</td>
+                            <td>کابل</td>
+                            <td>۱۴۳۲۳</td>
+                            <td>۱۳۹۷/۲۲/۳</td>
+                            <td>
+                                <button class="btn btn-success btn-xs" data-toggle="modal" data-target="#edit">ویرایش&nbsp;<i
+                                            class="fa fa-edit"></i></button>
+                            </td>
+                            <td>
+                                <button class="btn btn-danger btn-xs">حذف&nbsp;<i class="fa fa-edit"></i></button>
+                            </td>
+                            <td>
+                                <button class="btn btn-success btn-xs" data-toggle="modal" data-target="#details">جزییات&nbsp;<i
+                                            class="fa fa-edit"></i></button>
+                            </td>
+
+
+                        </tr>
+                        <tr>
+                            <td>۷</td>
+                            <td>نوید</td>
+                            <td>کریمی</td>
+                            <td>پوهاند</td>
+                            <td>هنرهای زیبا</td>
+                            <td>کابل</td>
+                            <td>۱۴۳۲۳</td>
+                            <td>۱۳۹۷/۲۲/۳</td>
+                            <td>
+                                <button class="btn btn-success btn-xs" data-toggle="modal" data-target="#edit">ویرایش&nbsp;<i
+                                            class="fa fa-edit"></i></button>
+                            </td>
+                            <td>
+                                <button class="btn btn-danger btn-xs">حذف&nbsp;<i class="fa fa-edit"></i></button>
+                            </td>
+                            <td>
+                                <button class="btn btn-success btn-xs" data-toggle="modal" data-target="#details">جزییات&nbsp;<i
+                                            class="fa fa-edit"></i></button>
+                            </td>
+
+
+                        </tr>
+                        <tr>
+                            <td>۸</td>
+                            <td>جواد</td>
+                            <td>کریمی</td>
+                            <td>پوهاند</td>
+                            <td>هنرهای زیبا</td>
+                            <td>کابل</td>
+                            <td>۱۴۳۲۳</td>
+                            <td>۱۳۹۷/۲۲/۳</td>
+                            <td>
+                                <button class="btn btn-success btn-xs" data-toggle="modal" data-target="#edit">ویرایش&nbsp;<i
+                                            class="fa fa-edit"></i></button>
+                            </td>
+                            <td>
+                                <button class="btn btn-danger btn-xs">حذف&nbsp;<i class="fa fa-edit"></i></button>
+                            </td>
+                            <td>
+                                <button class="btn btn-success btn-xs" data-toggle="modal" data-target="#details">جزییات&nbsp;<i
+                                            class="fa fa-edit"></i></button>
+                            </td>
+
+
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{--start of edit modal window--}}
+    <div class="modal inmodal" id="edit" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content animated fadeIn">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span
+                                aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <i class="fa fa-edit modal-icon"></i>
+                    <h6 class="modal-title">ویرایش محتوا</h6>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <form class="form-horizontal">
+                                <div class="form-group"><label class="col-lg-2 control-label">نام</label>
+
+                                    <div class="col-lg-10"><input type="text" placeholder="نام را وارد کنید"
+                                                                  class="form-control">
+                                    </div>
                                 </div>
-                            </div>
-                            <br>
+                                <div class="form-group"><label class="col-lg-2 control-label">تخلص</label>
 
+                                    <div class="col-lg-10"><input type="text" placeholder="تخلص" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group"><label class="col-lg-2 control-label">نام مکمل</label>
 
-                            <table class="table table-hover ">
-                                <thead>
-                                <tr class="text-center">
-                                    <th>ای دی</th>
-                                    <th>نام</th>
-                                    <th>تخلص</th>
-                                    <th>رتبه علمی</th>
-                                    <th>نام پوهنحی</th>
-                                    <th>نام پوهنتون</th>
-                             		<th>نمبر اساس</th>
-                                    <th>تاریخ ایجاد</th>
-                                    <th>ویرایش</th>
-                                    <th>حذف</th>
-                                    <th>جزییات</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                   <td>۱</td>
-                                   <td>احمد</td>
-                                   <td>کریمی</td>
-                                   <td>پوهاند</td>
-                                   <td>هنرهای زیبا</td>
-                                   <td>کابل</td>
-                                   <td>۱۴۳۲۳</td>
-                                   <td>۱۳۹۷/۲۲/۳</td>
-                                   <td><button class="btn btn-success btn-xs" data-toggle="modal" data-target="#edit">ویرایش&nbsp;<i class="fa fa-edit"></i></button></td>
-                                    <td><button class="btn btn-danger btn-xs">حذف&nbsp;<i class="fa fa-edit"></i></button></td>
-                                    <td><button class="btn btn-success btn-xs" data-toggle="modal" data-target="#details">جزییات&nbsp;<i class="fa fa-edit"></i></button></td>
+                                    <div class="col-lg-10"><input type="text" placeholder="نام مکمل"
+                                                                  class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group"><label class="col-lg-2 control-label">جنسیت</label>
 
+                                    <div class="col-lg-10">
+                                        <select name="" id="" class="form-control">
+                                            <option value="">جنسیت را انتخاب کنید</option>
+                                            <option value="">مرد</option>
+                                            <option value="">زن</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group"><label class="col-lg-2 control-label">مقام</label>
 
-                                </tr>
-                               <tr>
-                                   <td>۲</td>
-                                   <td>کریم</td>
-                                   <td>کریمی</td>
-                                   <td>پوهاند</td>
-                                   <td>هنرهای زیبا</td>
-                                   <td>کابل</td>
-                                   <td>۱۴۳۲۳</td>
-                                   <td>۱۳۹۷/۲۲/۳</td>
-                                   <td><button class="btn btn-success btn-xs" data-toggle="modal" data-target="#edit">ویرایش&nbsp;<i class="fa fa-edit"></i></button></td>
-                                   <td><button class="btn btn-danger btn-xs">حذف&nbsp;<i class="fa fa-edit"></i></button></td>
-                                   <td><button class="btn btn-success btn-xs" data-toggle="modal" data-target="#details">جزییات&nbsp;<i class="fa fa-edit"></i></button></td>
+                                    <div class="col-lg-10">
+                                        <select name="" id="" class="form-control">
+                                            <option value="">مقام را انتخاب کنید</option>
+                                            <option value="">ریس</option>
+                                            <option value="">آمر</option>
+                                            <option value="">معاون</option>
 
+                                        </select>
+                                    </div>
+                                </div>
 
+                                <div class="form-group"><label class="col-lg-2 control-label">رمز</label>
 
-
-                               </tr>
-                                <tr>
-                                    <td>۳</td>
-                                    <td>خالد</td>
-                                    <td>احمدی</td>
-                                    <td>پوهاند</td>
-                                    <td>هنرهای زیبا</td>
-                                    <td>کابل</td>
-                                    <td>۱۴۳۲۳</td>
-                                    <td>۱۳۹۷/۲۲/۳</td>
-                                    <td><button class="btn btn-success btn-xs" data-toggle="modal" data-target="#edit">ویرایش&nbsp;<i class="fa fa-edit"></i></button></td>
-                                    <td><button class="btn btn-danger btn-xs">حذف&nbsp;<i class="fa fa-edit"></i></button></td>
-                                    <td><button class="btn btn-success btn-xs" data-toggle="modal" data-target="#details">جزییات&nbsp;<i class="fa fa-edit"></i></button></td>
-
-
-
-                                </tr>
-                                <tr>
-                                    <td>۵</td>
-                                    <td>احمد</td>
-                                    <td>کریمی</td>
-                                    <td>پوهاند</td>
-                                    <td>هنرهای زیبا</td>
-                                    <td>کابل</td>
-                                    <td>۱۴۳۲۳</td>
-                                    <td>۱۳۹۷/۲۲/۳</td>
-                                    <td><button class="btn btn-success btn-xs" data-toggle="modal" data-target="#edit">ویرایش&nbsp;<i class="fa fa-edit"></i></button></td>
-                                    <td><button class="btn btn-danger btn-xs">حذف&nbsp;<i class="fa fa-edit"></i></button></td>
-                                    <td><button class="btn btn-success btn-xs" data-toggle="modal" data-target="#details">جزییات&nbsp;<i class="fa fa-edit"></i></button></td>
-
-
-
-                                </tr>
-                                 <tr>
-                                     <td>۶</td>
-                                     <td>نوید</td>
-                                     <td>کریمی</td>
-                                     <td>پوهاند</td>
-                                     <td>هنرهای زیبا</td>
-                                     <td>کابل</td>
-                                     <td>۱۴۳۲۳</td>
-                                     <td>۱۳۹۷/۲۲/۳</td>
-                                     <td><button class="btn btn-success btn-xs" data-toggle="modal" data-target="#edit">ویرایش&nbsp;<i class="fa fa-edit"></i></button></td>
-                                     <td><button class="btn btn-danger btn-xs">حذف&nbsp;<i class="fa fa-edit"></i></button></td>
-                                     <td><button class="btn btn-success btn-xs" data-toggle="modal" data-target="#details">جزییات&nbsp;<i class="fa fa-edit"></i></button></td>
-
-
-
-                                 </tr>
-                                 <tr>
-                                     <td>۷</td>
-                                     <td>نوید</td>
-                                     <td>کریمی</td>
-                                     <td>پوهاند</td>
-                                     <td>هنرهای زیبا</td>
-                                     <td>کابل</td>
-                                     <td>۱۴۳۲۳</td>
-                                     <td>۱۳۹۷/۲۲/۳</td>
-                                     <td><button class="btn btn-success btn-xs" data-toggle="modal" data-target="#edit">ویرایش&nbsp;<i class="fa fa-edit"></i></button></td>
-                                     <td><button class="btn btn-danger btn-xs">حذف&nbsp;<i class="fa fa-edit"></i></button></td>
-                                     <td><button class="btn btn-success btn-xs" data-toggle="modal" data-target="#details">جزییات&nbsp;<i class="fa fa-edit"></i></button></td>
-
-
-
-                                 </tr>
-                                 <tr>
-                                     <td>۸</td>
-                                     <td>جواد</td>
-                                     <td>کریمی</td>
-                                     <td>پوهاند</td>
-                                     <td>هنرهای زیبا</td>
-                                     <td>کابل</td>
-                                     <td>۱۴۳۲۳</td>
-                                     <td>۱۳۹۷/۲۲/۳</td>
-                                     <td><button class="btn btn-success btn-xs" data-toggle="modal" data-target="#edit">ویرایش&nbsp;<i class="fa fa-edit"></i></button></td>
-                                     <td><button class="btn btn-danger btn-xs">حذف&nbsp;<i class="fa fa-edit"></i></button></td>
-                                     <td><button class="btn btn-success btn-xs" data-toggle="modal" data-target="#details">جزییات&nbsp;<i class="fa fa-edit"></i></button></td>
-
-
-                                 </tr>
-                                 <tr>
-                                     <td>۶</td>
-                                     <td>نوید</td>
-                                     <td>کریمی</td>
-                                     <td>پوهاند</td>
-                                     <td>هنرهای زیبا</td>
-                                     <td>کابل</td>
-                                     <td>۱۴۳۲۳</td>
-                                     <td>۱۳۹۷/۲۲/۳</td>
-                                     <td><button class="btn btn-success btn-xs" data-toggle="modal" data-target="#edit">ویرایش&nbsp;<i class="fa fa-edit"></i></button></td>
-                                     <td><button class="btn btn-danger btn-xs">حذف&nbsp;<i class="fa fa-edit"></i></button></td>
-                                     <td><button class="btn btn-success btn-xs" data-toggle="modal" data-target="#details">جزییات&nbsp;<i class="fa fa-edit"></i></button></td>
-
-
-                                 </tr>
-                                <tr>
-                                    <td>۶</td>
-                                    <td>نوید</td>
-                                    <td>کریمی</td>
-                                    <td>پوهاند</td>
-                                    <td>هنرهای زیبا</td>
-                                    <td>کابل</td>
-                                    <td>۱۴۳۲۳</td>
-                                    <td>۱۳۹۷/۲۲/۳</td>
-                                    <td><button class="btn btn-success btn-xs" data-toggle="modal" data-target="#edit">ویرایش&nbsp;<i class="fa fa-edit"></i></button></td>
-                                    <td><button class="btn btn-danger btn-xs">حذف&nbsp;<i class="fa fa-edit"></i></button></td>
-                                    <td><button class="btn btn-success btn-xs" data-toggle="modal" data-target="#details">جزییات&nbsp;<i class="fa fa-edit"></i></button></td>
-
-
-                                </tr>
-                                </tbody>
-                            </table>
+                                    <div class="col-lg-10"><input type="password" placeholder="رمز تان را وارد کنید"
+                                                                  class="form-control"></div>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
-            </div>
-
-{{--start of edit modal window--}}
-<div class="modal inmodal" id="edit" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content animated fadeIn">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span
-                            aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <i class="fa fa-clock-o modal-icon"></i>
-                <h4 class="modal-title">ویرایش محتوا</h4>
-            </div>
-            <div class="modal-body">
-                <div class="form-group">
-                    <label for="id">ای دی</label>
-                    <input type="text" class="form-control" value="1" name="id" disabled>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-white" style="float: right" data-dismiss="modal">بستن</button>
+                    <button type="button" class="btn btn-primary" style="float: right">ذخیره کردن</button>
                 </div>
-                <div class="form-group">
-                    <label for="name">نام</label>
-                    <input type="text" class="form-control" value="کابل" name="name" >
-                </div>
-                <div class="form-group">
-                    <label for="name">نام مسول</label>
-                    <input type="text" class="form-control" value="بارکزی" name="responsiable" >
-                </div>
-                <div class="form-group">
-                    <label for="name">نام ولایت</label>
-                    <input type="text" class="form-control" value="کابل" name="responsiable" >
-                </div>
-                <div class="form-group">
-                    <label for="name">نمبر اساس</label>
-                    <input type="text" class="form-control" value="۲۹۲۸" name="responsiable" >
-                </div>
-                <div class="form-group">
-                    <label for="name">تاریخ ایجاد</label>
-                    <input type="text" class="form-control" value="۱۳۹۷/۲/۴" name="responsiable" >
-                </div>
-
-
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-white" data-dismiss="modal">بستن</button>
-                <button type="button" class="btn btn-primary">ذخیره کردن</button>
             </div>
         </div>
     </div>
-</div>
-{{--end of edit modal window--}}
+    {{--end of edit modal window--}}
 
-{{--start of details  modal window--}}
-<div class="modal inmodal" id="details" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content animated fadeIn">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span
-                            aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <i class="fa fa-clock-o modal-icon"></i>
-                <h4 class="modal-title">جزییات پوهنتون</h4>
-            </div>
-            <div class="modal-body">
+    {{--start of details  modal window--}}
+    <div class="modal inmodal" id="details" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content animated fadeIn">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span
+                                aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <i class="fa fa-clock-o modal-icon"></i>
+                    <h4 class="modal-title">جزییات پوهنتون</h4>
+                </div>
+                <div class="modal-body">
 
-                <tr>
-                    <td>ای دی</td>
-                    <td>۱۰</td>
-                </tr>
-                <tr>
-                    <td>نام</td>
-                    <td>پوهنتون هرات</td>
-                </tr>
-                <tr>
-                    <td>نام مسول</td>
-                    <td>بارکزی</td>
-                </tr>
-                <tr>
-                    <td>نمبر اساس</td>
-                    <td>۲۳۹۳</td>
-                </tr>
-                <tr>
-                    <td>سال ایجاد</td>
-                    <td>۱۳۹۷/۳/۲</td>
-                </tr>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-white" data-dismiss="modal">بستن</button>
-                <button type="button" class="btn btn-primary">ذخیره کردن</button>
+                    <tr>
+                        <td>ای دی</td>
+                        <td>۱۰</td>
+                    </tr>
+                    <tr>
+                        <td>نام</td>
+                        <td>پوهنتون هرات</td>
+                    </tr>
+                    <tr>
+                        <td>نام مسول</td>
+                        <td>بارکزی</td>
+                    </tr>
+                    <tr>
+                        <td>نمبر اساس</td>
+                        <td>۲۳۹۳</td>
+                    </tr>
+                    <tr>
+                        <td>سال ایجاد</td>
+                        <td>۱۳۹۷/۳/۲</td>
+                    </tr>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-white" style="float: right" data-dismiss="modal">بستن</button>
+                    <button type="button" class="btn btn-primary" style="float: right">ذخیره کردن</button>
+                </div>
             </div>
         </div>
     </div>
-</div>
-{{--end of details modal window--}}
+    {{--end of details modal window--}}
 
 
 @endsection

@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>HK | Clinic</title>
+    <title>سیستم مدیریت اطلاعات </title>
     <link href="{{ asset('dashboard/css/plugins/sweetalert/sweetalert.css') }}" rel="stylesheet"/>
     <link href="{{ asset('dashboard/css/bootstrap.min.css') }}" rel="stylesheet">
     <link href="{{ asset('dashboard/css/plugins/bootstrap-rtl/bootstrap-rtl.min.css') }}" rel="stylesheet">
@@ -25,3 +25,4 @@
     @yield('style')
 
 </head>
+

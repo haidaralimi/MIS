@@ -6,7 +6,7 @@
             <div class="col-lg-12">
                 <div class="ibox float-e-margins">
                     <div class="ibox-title">
-                        <h5>تعین مسول</h5>
+                        <h5>تعین مسول به سطح پوهنحی</h5>
                         <div class="ibox-tools">
                             <a class="collapse-link">
                                 <i class="fa fa-chevron-up"></i>
@@ -30,17 +30,16 @@
                     <div class="ibox-content">
 
                         <!-- form -->
-
+                        <br>
                         <form method="post" class="form-horizontal" action="">
                             
                             <div class="form-group">
-                                <label class="col-sm-2 control-label">نام  :</label>
+                                <label class="col-sm-2 control-label">نام مسول :</label>
                                 <div class="col-sm-10">
-                                    <input type="text" name="name" class="form-control" placeholder="نام" style="width:50%"
+                                    <input type="text" name="name" class="form-control" placeholder="نام مسول" style="width:50%"
                                            required>
                                 </div>
                             </div>
-                            <div class="hr-line-dashed"></div>
                             <div class="form-group">
                                 <label class="col-sm-2 control-label">تخلص :</label>
                                 <div class="col-sm-10">
@@ -48,7 +47,6 @@
                                            style="width:50%" required>
                                 </div>
                             </div>
-                            <div class="hr-line-dashed"></div>
                             <div class="form-group">
                                 <label class="col-sm-2 control-label">رتبه علمی :</label>
                                 <div class="col-sm-10">
@@ -64,7 +62,21 @@
 
                                 </div>
                             </div>
-                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">پوهنحی :</label>
+                                <div class="col-sm-10">
+                                    <select class="form-control" style="width:50%">
+                                        <option>پوهنحی را انتخاب کنید</option>
+                                        <option>اقتصاد</option>
+                                        <option>ژورنالیزم</option>
+                                        <option>هنرهای زیبا</option>
+                                        <option>زراعت</option>
+
+
+                                    </select>
+
+                                </div>
+                            </div>
                             <div class="form-group">
                                 <label class="col-sm-2 control-label">پوهنتون :</label>
                                 <div class="col-sm-10">
@@ -83,32 +95,22 @@
 
                                 </div>
                             </div>
-                            <div class="hr-line-dashed"></div>
-                            <div class="form-group">
-                                <label class="col-sm-2 control-label">پوهنحی :</label>
-                                <div class="col-sm-10">
-                                    <select class="form-control" style="width:50%">
-                                        <option>پوهنحی را انتخاب کنید</option>
-                                        <option>اقتصاد</option>
-                                        <option>ژورنالیزم</option>
-                                        <option>هنرهای زیبا</option>
-                                        <option>زراعت</option>
-                                        
 
-                                    </select>
-
-                                </div>
-                            </div>
                           
-                             <div class="hr-line-dashed"></div>
                             <div class="form-group">
-                                <label class="col-sm-2 control-label">نمبر اساس :</label>
+                                <label class="col-sm-2 control-label">نمبر حکم مقام وزارت:</label>
                                 <div class="col-sm-10">
-                                    <input type="text" class="form-control" name="amount" placeholder="نمبر اساس"
+                                    <input type="text" class="form-control" name="amount" placeholder="نمبر حکم مقام وزارت"
                                            style="width:50%" required>
                                 </div>
                             </div>
-                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">نمبر صادره مکتوب:</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" name="amount" placeholder="نمبر صادره مکتوب"
+                                           style="width:50%" required>
+                                </div>
+                            </div>
                             <div class="form-group">
                                 <label class="col-sm-2 control-label">تاریخ ایجاد :</label>
                                 <div class="col-sm-10">
@@ -116,9 +118,16 @@
                                            style="width:50%" required>
                                 </div>
                             </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">درج مکتوب:</label>
+                                <div class="col-sm-10">
+                                    <input type="file" class="form-control" name="amount" placeholder="نمبر صادره مکتوب:"
+                                           style="width:50%" required>
+                                </div>
+                            </div>
 
                             <div class="form-group">
-                                <label class="col-sm-1 control-label"></label>
+                                <label class="col-sm-2 control-label"></label>
                                 <div class="col-sm-10">
                                     <button type="submit" class="btn btn-primary btn-md" style="margin-left:10px;">ذخیره
                                         &nbsp;<i class="fa fa-save"></i></button>

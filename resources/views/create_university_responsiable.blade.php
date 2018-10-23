@@ -1,28 +1,11 @@
 @extends('master')
 @section('content')
-    <div class="row" style="margin-left:2px;margin-right: 20px;">
-        <div class="col-sm-3">
-            <h2><a class="btn btn-primary hvr-grow-shadow" style="font-size: 13px; width: 200px;" href="/existing_department"><i class="fa fa-list pull-left"
-                                                                                                                             style="color:#ffc000; font-size: 25px;"></i><b style="font-size: 15px">دیپارتمنت های موجود</b></a></h2>
-        </div>
-        <div class="col-sm-3">
-            <h2><a class="btn btn-primary hvr-grow-shadow" style="font-size: 13px; width: 200px;" href="/accepted_department"><i class="fa fa-list pull-left"
-                                                                                                                                            style="color:#ffc000; font-size: 25px;"></i><b style="font-size: 15px">دیپارتمنت های معقول شده</b></a></h2>
-        </div>
-        <div class="col-sm-3">
-            <h2><a class="btn btn-primary hvr-grow-shadow" style="font-size: 13px; width: 200px;" href="/rejected_department"><i class="fa fa-list pull-left"
-                                                                                                                               style="color:#ffc000; font-size: 25px;"></i><b style="font-size: 15px">دیپارتمنت در حال لغو</b></a></h2>
-        </div>
-
-
-
-    </div>
-<div class="wrapper wrapper-content animated fadeInLeft">
+    <div class="wrapper wrapper-content animated fadeInLeft">
         <div class="row">
             <div class="col-lg-12">
                 <div class="ibox float-e-margins">
                     <div class="ibox-title">
-                        <h5>تدویر دیپارتمنت</h5>
+                        <h5>  تعین مسول به سطح پوهنتون</h5>
                         <div class="ibox-tools">
                             <a class="collapse-link">
                                 <i class="fa fa-chevron-up"></i>
@@ -44,42 +27,48 @@
                         </div>
                     </div>
                     <div class="ibox-content">
-
-                        <!-- form -->
-
-                        <form method="post" class="form-horizontal" action="">
-                            <div class="form-group">
-                                <label class="col-sm-2 control-label">ای دی :</label>
-                                <div class="col-sm-10">
-                                    <input type="text" name="name" class="form-control" placeholder="ای دی" style="width:50%"
-                                           disabled>
-                                </div>
+                        <div class="row">
+                            <div class="col-md-2">
+                                <a href="university_responsiable_list">
+                                    <button class="btn btn-primary">
+                                        <li class="fa fa-list"></li>&nbsp;<b> لیست مسولین</b>
+                                    </button>
+                                </a>
                             </div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+                        <!-- form -->
+                        <form method="post" class="form-horizontal" action="">
 
                             <div class="form-group">
-                                <label class="col-sm-2 control-label">نام دیپارتمنت :</label>
+                                <label class="col-sm-2 control-label">نام  :</label>
                                 <div class="col-sm-10">
-                                    <input type="text" name="name" class="form-control" placeholder="نام دیپارتمنت" style="width:50%"
+                                    <input type="text" name="name" class="form-control" placeholder="نام" style="width:50%"
                                            required>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="col-sm-2 control-label">پوهنحی :</label>
-                               <div class="col-sm-10">
+                                <label class="col-sm-2 control-label">تخلص :</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" name="amount" placeholder="تخلص"
+                                           style="width:50%" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">رتبه علمی :</label>
+                                <div class="col-sm-10">
+                                    <select class="form-control" style="width:50%">
+                                        <option>رتبه علمی را انتخاب کنید </option>
+                                        <option>پوهاند</option>
+                                        <option>پوهنمل</option>
+                                        <option>پوهندوی</option>
+                                        <option>پوهنیار</option>
 
-                           			<select class="form-control" style="width:50%" >
-	                                 			<option>پوهنحی را انتخاب کنید</option>
-	                                            <option>تعلیم تربیه</option>
-	                                            <option>اقتصاد</option>
-	                                            <option>زراعت</option>
-	                                            <option>هنرهای زیبا</option>
-	                                            <option>ژورنالیزم</option>
-                                            <option>اداره و عامه</option>
-                                        </select>
+
+                                    </select>
 
                                 </div>
                             </div>
-
                             <div class="form-group">
                                 <label class="col-sm-2 control-label">پوهنتون :</label>
                                 <div class="col-sm-10">
@@ -88,37 +77,48 @@
                                         <option>کابل</option>
                                         <option>پولیتخنیک</option>
                                         <option>شهید ربانی</option>
-                                        <option>بلخ</option>
+                                        <option>پوهنتون طبی کابل</option>
                                         <option>البیرونی</option>
+                                        <option> پوهنتون کندز</option>
+                                        <option>پوهنتون بلخ</option>
+
 
                                     </select>
 
                                 </div>
                             </div>
 
+
                             <div class="form-group">
-                                <label class="col-sm-2 control-label">نمبر حکم مقام وزارت :</label>
+                                <label class="col-sm-2 control-label">نمبر حکم مقام وزارت&nbsp;&nbsp;:</label>
                                 <div class="col-sm-10">
                                     <input type="text" class="form-control" name="amount" placeholder="نمبر حکم مقام وزارت"
                                            style="width:50%" required>
                                 </div>
                             </div>
+
                             <div class="form-group">
-                                <label class="col-sm-2 control-label">نمبر صادره مکتوب :</label>
+                                <label class="col-sm-2 control-label">نمبر صادره مکتوب&nbsp; :</label>
                                 <div class="col-sm-10">
-                                    <input type="text" class="form-control" name="amount" placeholder="نمبر صادره مکتوب"
+                                    <input type="text" class="form-control" name="purpose" placeholder="نمبر صادره مکتوب"
                                            style="width:50%" required>
                                 </div>
                             </div>
 
                             <div class="form-group">
-                                <label class="col-sm-2 control-label">تاریخ ایجاد :</label>
+                                <label class="col-sm-2 control-label">تاریخ تدویر&nbsp;&nbsp;:</label>
                                 <div class="col-sm-10">
-                                    <input type="date" class="form-control" name="amount" placeholder="تاریخ"
+                                    <input type="date" class="form-control" name="purpose" placeholder="نام ولایت"
                                            style="width:50%" required>
                                 </div>
                             </div>
-
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">درج مکتوب&nbsp;&nbsp;:</label>
+                                <div class="col-sm-10">
+                                    <input type="file" class="form-control" name="purpose" placeholder="نام ولایت"
+                                           style="width:50%" required>
+                                </div>
+                            </div>
                             <div class="form-group">
                                 <label class="col-sm-2 control-label"></label>
                                 <div class="col-sm-10">
@@ -134,6 +134,5 @@
                 </div>
             </div>
         </div>
-</div>
-
+    </div>
 @endsection
